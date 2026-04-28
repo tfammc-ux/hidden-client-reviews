@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Star, Search, Check, Sparkles, ShieldCheck, TrendingUp, MessageCircle, ChevronDown } from "lucide-react";
+import { Star, Search, Check, Sparkles, ShieldCheck, TrendingUp, MessageCircle, ChevronDown, CreditCard, BadgeCheck } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP = "https://wa.me/351930918014";
+const WHATSAPP = "https://wa.me/351930918066?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Cliente%20Oculto";
 
 function Logo({ size = 36 }: { size?: number }) {
   return (
@@ -32,7 +32,7 @@ function Nav() {
           <a href="#casos" className="hover:text-gold transition-colors">Casos</a>
           <a href="#faq" className="hover:text-gold transition-colors">FAQ</a>
         </div>
-        <a href={WHATSAPP} className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.82_0.16_85)] to-[oklch(0.88_0.13_90)] text-primary-foreground px-5 py-2.5 text-sm font-semibold shadow-[var(--shadow-gold)] hover:scale-105 transition-transform">
+        <a href="#oferta" className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.82_0.16_85)] to-[oklch(0.88_0.13_90)] text-primary-foreground px-5 py-2.5 text-sm font-semibold shadow-[var(--shadow-gold)] hover:scale-105 transition-transform">
           <Sparkles className="w-4 h-4" /> Oferta Starter 300€
         </a>
       </nav>
@@ -60,7 +60,7 @@ function Hero() {
           Avaliações Google escritas por contas portuguesas reais, entregues em pacotes fixos. Sem mensalidades, sem contratos longos — pagamento único.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.82_0.16_85)] to-[oklch(0.88_0.13_90)] text-primary-foreground px-8 py-4 font-semibold shadow-[var(--shadow-gold)] hover:scale-105 transition-transform glow-pulse">
+          <a href="#oferta" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.82_0.16_85)] to-[oklch(0.88_0.13_90)] text-primary-foreground px-8 py-4 font-semibold shadow-[var(--shadow-gold)] hover:scale-105 transition-transform glow-pulse">
             Ver Planos · desde 300€
           </a>
           <a href="#como-funciona" className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-8 py-4 font-medium hover:border-gold/50 transition">
@@ -137,7 +137,7 @@ function HowItWorks() {
 
 function SpecialOffer() {
   return (
-    <section className="py-24 px-6">
+    <section id="oferta" className="py-24 px-6 scroll-mt-24">
       <div className="max-w-4xl mx-auto">
         <div className="relative rounded-3xl overflow-hidden border border-gold/40 bg-gradient-to-br from-card via-card to-[oklch(0.25_0.06_165)] p-10 md:p-14 shadow-[var(--shadow-gold)]">
           <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 rounded-full bg-gold text-primary-foreground px-3 py-1 text-xs font-bold">
