@@ -141,14 +141,18 @@ function SpecialOffer() {
       <div className="max-w-4xl mx-auto">
         <div className="relative rounded-3xl overflow-hidden border border-gold/40 bg-gradient-to-br from-card via-card to-[oklch(0.25_0.06_165)] p-10 md:p-14 shadow-[var(--shadow-gold)]">
           <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 rounded-full bg-gold text-primary-foreground px-3 py-1 text-xs font-bold">
-            <Sparkles className="w-3 h-3" /> OFERTA LIMITADA
+            <Sparkles className="w-3 h-3" /> EXCLUSIVO NOVOS CLIENTES
           </div>
           <div className="max-w-2xl">
             <p className="text-gold uppercase tracking-widest text-xs font-semibold mb-3">Pacote de Lançamento</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Starter — 300€</h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-6">
               <span className="text-foreground font-semibold">50 avaliações escritas Google</span> entregues em <span className="text-foreground font-semibold">2 meses</span>. O arranque ideal para colocar o seu negócio no mapa.
             </p>
+            <div className="inline-flex items-center gap-2 rounded-lg border border-gold/40 bg-gold/10 px-4 py-2 mb-8 text-sm">
+              <Sparkles className="w-4 h-4 text-gold" />
+              <span><span className="font-semibold text-gold">Oferta limitada</span> · apenas para <span className="font-semibold">novos clientes</span> · válida até <span className="font-semibold">30/04/2026</span></span>
+            </div>
             <div className="grid sm:grid-cols-2 gap-3 mb-8">
               {["50 avaliações escritas", "Entregues em 2 meses", "Contas portuguesas reais", "Pagamento único · sem renovação"].map(f => (
                 <div key={f} className="flex items-center gap-2 text-sm">
