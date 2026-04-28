@@ -242,6 +242,10 @@ function Plans() {
               <h3 className="text-2xl font-bold mb-1">{p.name}</h3>
               <p className="text-sm text-muted-foreground mb-6">{p.reviews} avaliações em {p.months} meses</p>
               <div className="mb-6">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-lg text-muted-foreground line-through decoration-gold/60">{(p.price * 2).toLocaleString("pt-PT")}€</span>
+                  <span className="inline-flex items-center rounded-full bg-gold/15 text-gold px-2 py-0.5 text-[10px] font-bold tracking-wider">-50%</span>
+                </div>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-serif font-black text-gradient-gold">{p.price.toLocaleString("pt-PT")}€</span>
                 </div>
