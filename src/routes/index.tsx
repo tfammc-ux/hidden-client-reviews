@@ -3,6 +3,7 @@ import { Star, Search, Check, Sparkles, ShieldCheck, TrendingUp, MessageCircle, 
 import { useState } from "react";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
+import mbwayLogo from "@/assets/mbway.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
