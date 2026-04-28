@@ -313,6 +313,25 @@ function Cases() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Resultados Reais. Clientes Reais.</h2>
           <p className="text-muted-foreground">O que os nossos clientes conseguiram nos primeiros meses.</p>
         </div>
+
+        <div className="relative rounded-3xl border border-gold/40 bg-gradient-to-br from-[oklch(0.22_0.06_165)] via-card to-[oklch(0.18_0.04_165)] p-8 md:p-12 mb-10 shadow-[var(--shadow-gold)] overflow-hidden">
+          <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 rounded-full bg-gold text-primary-foreground px-3 py-1 text-xs font-bold">
+            <TrendingUp className="w-3 h-3" /> DESDE 2023
+          </div>
+          <div className="grid md:grid-cols-[auto_1fr] items-center gap-8">
+            <div className="text-center md:text-left">
+              <div className="text-7xl md:text-8xl font-serif font-black text-gradient-gold leading-none">60%</div>
+              <div className="text-2xl md:text-3xl font-serif font-black text-gold mt-2">3× ROI</div>
+            </div>
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-3">Em média, 60% dos nossos clientes triplicam o investimento</h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Desde o início da nossa atividade em <span className="font-semibold text-gold">2023</span>, observámos que mais de metade dos clientes recuperam <span className="font-semibold text-foreground">3× o custo do nosso serviço</span> através do aumento de contactos, marcações e vendas geradas pela melhoria da reputação no Google.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-6">
           {cases.map(c => (
             <div key={c.title} className="rounded-2xl border border-border bg-card p-8 hover:border-gold/40 transition">
@@ -342,6 +361,8 @@ function Cases() {
 }
 
 const faqs = [
+  { q: "Garantem a entrega das avaliações no prazo?", a: "Sim. Garantimos a entrega do número total de avaliações contratadas dentro do prazo estabelecido. Caso não cumpramos o prazo, devolvemos 100% do valor pago — sem questões." },
+  { q: "Divulgam o nome dos vossos clientes?", a: "Nunca. A confidencialidade é uma das nossas garantias mais importantes — em nenhum momento divulgamos, partilhamos ou referimos publicamente o nome dos nossos clientes. Toda a relação é tratada com total discrição." },
   { q: "As avaliações são reais ou podem ser removidas pelo Google?", a: "Todas as avaliações são feitas por contas portuguesas reais com histórico de utilização. Por isso, o Google reconhece-as como autênticas e não as remove — ao contrário das reviews falsas geradas por bots." },
   { q: "Quanto tempo demora a ver resultados?", a: "Os primeiros impactos no ranking local começam tipicamente a partir do 2.º mês. O ROI máximo costuma surgir entre o 4.º e o 6.º mês de presença consistente." },
   { q: "Isto é legal?", a: "Sim. As avaliações são feitas por pessoas reais que tiveram contacto com o seu negócio (presencial ou online). Não usamos perfis falsos nem geramos conteúdo fraudulento." },
@@ -388,12 +409,66 @@ function CTA() {
   );
 }
 
+function Guarantee() {
+  return (
+    <section className="py-20 px-6 border-t border-border/50">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+        <div className="rounded-3xl border border-gold/40 bg-gradient-to-br from-card to-[oklch(0.22_0.05_165)] p-8 md:p-10">
+          <div className="w-14 h-14 rounded-2xl bg-gold/15 flex items-center justify-center mb-5">
+            <BadgeCheck className="w-7 h-7 text-gold" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3">Garantia 100% — Entrega no Prazo ou Devolução Total</h3>
+          <p className="text-foreground/80 leading-relaxed">
+            Comprometemo-nos a entregar todas as avaliações dentro do prazo estabelecido. Se por qualquer motivo não cumprirmos, devolvemos <span className="font-semibold text-gold">100% do valor pago</span> — sem burocracias nem letras pequenas.
+          </p>
+        </div>
+        <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
+          <div className="w-14 h-14 rounded-2xl bg-gold/15 flex items-center justify-center mb-5">
+            <CreditCard className="w-7 h-7 text-gold" />
+          </div>
+          <h3 className="text-2xl font-bold mb-3">Pagamento Disponível</h3>
+          <p className="text-muted-foreground mb-5">Pagamento único, simples e seguro através de:</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5">
+              <div className="bg-white rounded-md p-1.5"><img src={mbwayLogo} alt="MB WAY" className="h-5 w-auto" /></div>
+              <span className="text-sm font-semibold">MB WAY</span>
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5">
+              <CreditCard className="w-5 h-5 text-gold" />
+              <span className="text-sm font-semibold">Transferência Bancária</span>
+            </div>
+          </div>
+          <p className="text-xs text-muted-foreground mt-4">Início do serviço em 24-48h após confirmação do pagamento.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FloatingWhatsApp() {
+  return (
+    <a
+      href={WHATSAPP}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+      className="fixed bottom-6 right-6 z-50 group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white pl-4 pr-5 py-3 shadow-2xl shadow-[#25D366]/40 hover:scale-105 transition-transform"
+    >
+      <span className="relative flex">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/40 opacity-75"></span>
+        <MessageCircle className="w-6 h-6 relative" />
+      </span>
+      <span className="font-semibold text-sm hidden sm:inline">Fale connosco</span>
+    </a>
+  );
+}
+
 function Footer() {
   return (
     <footer className="border-t border-border/50 py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <Logo size={28} />
-        <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Cliente Oculto. Todos os direitos reservados.</p>
+        <p className="text-xs text-muted-foreground">© 2023 Cliente Oculto. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
@@ -411,10 +486,12 @@ function Index() {
         <Plans />
         <WhyReal />
         <Cases />
+        <Guarantee />
         <FAQ />
         <CTA />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
