@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP = "https://wa.me/351930918066?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Cliente%20Oculto";
+const WHATSAPP = "https://wa.me/351930918066";
 
 function Logo({ size = 36 }: { size?: number }) {
   return (
@@ -401,7 +401,7 @@ function CTA() {
     <section className="py-24 px-6">
       <div className="max-w-4xl mx-auto text-center rounded-3xl border border-gold/30 bg-gradient-to-br from-card via-[oklch(0.22_0.05_165)] to-[oklch(0.18_0.04_165)] p-12 md:p-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">Pronto para crescer no Google?</h2>
-        <p className="text-muted-foreground max-w-xl mx-auto mb-8">Fale connosco hoje e receba um diagnóstico gratuito do seu perfil Google Business.</p>
+        <p className="text-muted-foreground max-w-xl mx-auto mb-8">Envie-nos uma mensagem direta no WhatsApp e receba um diagnóstico gratuito do seu perfil Google Business.</p>
         <a href={WHATSAPP} className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.82_0.16_85)] to-[oklch(0.88_0.13_90)] text-primary-foreground px-10 py-4 font-semibold shadow-[var(--shadow-gold)] hover:scale-105 transition">
           <MessageCircle className="w-5 h-5" /> Falar no WhatsApp
         </a>
@@ -459,7 +459,7 @@ function FloatingWhatsApp() {
         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white/40 opacity-75"></span>
         <MessageCircle className="w-6 h-6 relative" />
       </span>
-      <span className="font-semibold text-sm hidden sm:inline">Fale connosco</span>
+      <span className="font-semibold text-sm hidden sm:inline">WhatsApp</span>
     </a>
   );
 }
