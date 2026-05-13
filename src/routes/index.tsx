@@ -34,7 +34,7 @@ function Nav() {
           <a href="#faq" className="hover:text-gold transition-colors">FAQ</a>
         </div>
         <a href="#oferta" className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.82_0.16_85)] to-[oklch(0.88_0.13_90)] text-primary-foreground px-5 py-2.5 text-sm font-semibold shadow-[var(--shadow-gold)] hover:scale-105 transition-transform">
-          <Sparkles className="w-4 h-4" /> Oferta Starter 300€
+          <Sparkles className="w-4 h-4" /> Oferta Starter 50 reviews
         </a>
       </nav>
     </header>
