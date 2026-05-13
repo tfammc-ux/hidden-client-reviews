@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hidden-client-reviews.lovable.app/sitemap.xml
