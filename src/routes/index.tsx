@@ -152,7 +152,7 @@ function SpecialOffer() {
             </p>
             <div className="inline-flex items-center gap-2 rounded-lg border border-gold/40 bg-gold/10 px-4 py-2 mb-8 text-sm">
               <Sparkles className="w-4 h-4 text-gold" />
-              <span><span className="font-semibold text-gold">Oferta limitada</span> · apenas para <span className="font-semibold">novos clientes</span> · válida até <span className="font-semibold">30/04/2026</span></span>
+              <span><span className="font-semibold text-gold">Oferta limitada</span> · apenas para <span className="font-semibold">novos clientes</span> · válida até <span className="font-semibold">31/05/2026</span></span>
             </div>
             <div className="grid sm:grid-cols-2 gap-3 mb-8">
               {["50 avaliações escritas", "Entregues em 2 meses", "Contas portuguesas reais", "Pagamento único · sem renovação"].map(f => (
