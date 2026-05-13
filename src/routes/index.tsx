@@ -45,7 +45,7 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-60" />
+        <img src={heroBg} alt="Avaliações Google reais para negócios em Portugal" loading="eager" className="w-full h-full object-cover opacity-60" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
       </div>
       <div className="relative max-w-5xl mx-auto px-6 text-center animate-fade-up">
